@@ -1,0 +1,42 @@
+$_combined-state-selectors: true !default;
+$_element-separator: "__" !default;
+$_modifier-separator: "--" !default;
+$_state-prefix: "is" !default;
+
+@mixin block($name) {
+  .#{$name} {
+    @content;
+  }
+}
+
+@mixin element($name) {
+  @at-root {
+    &#{$_element-separator}#{$name} {
+      @content;
+    }
+  }
+}
+
+@mixin modifier($name) {
+  @at-root {
+    &#{$_modifier-separator}#{$name} {
+      @content;
+    }
+  }
+}
+
+@mixin state($state, $prefix: $_state-prefix) {
+  @if $_combined-state-selectors {
+    @at-root {
+      &.#{$prefix}-#{$state} {
+        @content;
+      }
+    }
+  } @else {
+    @at-root {
+      &#{$_modifier-separator}#{$prefix}-#{$state} {
+        @content;
+      }
+    }
+  }
+}

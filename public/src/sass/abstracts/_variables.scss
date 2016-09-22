@@ -1,0 +1,109 @@
+// Colors
+$white: #fff;
+$black: #000;
+
+// Spacing
+$spacer: 1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+
+// body
+$body-bg: $white;
+$body-color: $black;
+
+// Links
+$link-color: $black !default;
+$link-decoration: none !default;
+$link-hover-color: $black !default;
+$link-hover-decoration: underline !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  mobile-s: 0,
+  mobile-m: 375px,
+  mobile-l: 425px,
+  tablet: 768px,
+  laptop: 1024px,
+  laptop-l: 1440px,
+  4k: 2560px
+) !default;
+
+// Grid containers
+$container-max-widths: (
+  mobile-s: none,
+  mobile-m: none,
+  mobile-l: none,
+  tablet: 538px,
+  laptop: 794px,
+  laptop-l: 1410px,
+  4k: 2530px
+) !default;
+
+// Grid columns
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+// Typography
+$font-family-roboto: 'roboto', sans-serif !default;
+$font-family-open-sans: 'open-sans', sans-serif !default;
+$font-family-base: $font-family-open-sans !default;
+
+$font-size-root: 16px !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .875rem !default;
+$font-size-xs: .75rem !default;
+
+$line-height-base: 1.5 !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+$font-color-base: inherit;
+
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family: $font-family-roboto !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+
+$text-muted: $black !default;
+
+$abbr-border-color: $black !default;
+
+$dt-font-weight: bold !default;
+
+// Components
+$line-height-lg: (4 / 3) !default;
+$line-height-sm: 1.5 !default;
+
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+$border-color: darken($black, 5%) !default;
+$border-style: solid !default;
+$border-width: 1px !default;
+
+// Tables
+$table-cell-padding: .75rem !default;
+
+$table-bg: $white;
+
+// Forms
+$input-padding-x: .75rem !default;
+$input-padding-y: .5rem !default;
+
+$input-border-color: rgba(0, 0, 0, .15) !default;
+$input-color: $black !default;
+
+$cursor-disabled: not-allowed !default;
+
+// Cards
+$card-spacer-x: 1.25rem !default;
+$card-spacer-y: .75rem !default;
+$card-border-color: rgba(0, 0, 0, .125) !default;
